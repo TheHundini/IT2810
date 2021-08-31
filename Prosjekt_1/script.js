@@ -1,5 +1,5 @@
 //JQuery usage, for toggling ai.
-var aiToggle = false;
+var aiToggle = true;
 $(document).ready(function() {
     $('a#button').click(function() {
         $(this).toggleClass("down");
@@ -18,7 +18,7 @@ $(document).ready(function() {
 var c = document.getElementById("myCanvas");
 ctx = c.getContext("2d");
 ctx.fillRect(0, 0, c.width, c.height);
-ctx.fillStyle = 'black';
+ctx.fillStyle = 'snow';
 
 var UpPressed2 = false;
 var DownPressed2 = false;
@@ -103,7 +103,7 @@ function drawFigs() {
 
 //Main heavy lifting function, handles redrawing and boundaries.
 function draw() {
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = 'white'
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.fill();
     drawFigs();
