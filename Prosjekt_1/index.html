@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project 1 in IT2810</title>
+    <meta name="description" content="A humble beginning to a new subject.">
+    <meta name="author" content="Martin B">
+    <meta property="og:title" content="Project 1">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="The first of many projects to come.">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Prosjekt 1: Ydmyke begynnelser</h1>
+    <div id="kunstnern">
+        <h3>The Artist</h3>
+        <h4>Kunstneren er et herlig menneske som har reist hele veien fra Vestland til Trøndelag. Bildene konstruert bærer tydlige preg av en regnfyllt verden, dette sees på tydlig bruk av gråtoner.
+
+        </h4>
+    </div>
+
+    <!--https://css-tricks.com/svg-path-syntax-illustrated-guide/-->
+    <div class="container">
+        <h3 id="title1">The lonely mountain</h3>
+        <h4 class="svgDiv">
+            <svg class="icon  icon--plus" viewBox="0 0 350 300" xmlns="http://www.w3.org/2000/svg">
+                <circle r="1" fill="yellow"><animateMotion dur="17s" repeatCount="indefinite" path="M-1,5 q 4,-6 11,0" /></circle>
+                <rect x="0" y="4" width="8" height="6" />
+                <path d="M1,8 L4,1 L7,8 z" id="mot"/>
+                <path d="M3,3 L4,1 L5,3 z" id="snow"/>
+            </svg>
+        </h4>
+
+        <!--https://www.w3schools.com/html/html5_canvas.asp-->
+        <h3 id="title2">Totally not pong</h3>
+        <h4 class="canvasDiv">
+            <canvas id="myCanvas" width="350" height="300"></canvas>
+            <!--<a id="button" style="z-index:1; position:absolute; top: x; left:y" title="button">Engage ai</a>-->
+            <a href="#" class="toggler off" style="z-index:1; position:absolute; top:y; left: x">&nbsp; </a>
+        </h4>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="bttnScript.js"></script>
+</body>
+
+</html>
